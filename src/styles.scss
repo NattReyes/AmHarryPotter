@@ -1,3 +1,5 @@
+$font-stack: 'Open Sans', sans-serif;
+
   @mixin small {
     @media only screen and (min-width: 300px) {
       @content;
@@ -25,11 +27,10 @@
 
   body{
       background-color: #000000;
-      @include desktop{
         background-repeat: no-repeat;
         background-size: 100vw ,50vw;
         background-image: url('https://i.pinimg.com/originals/31/9c/b9/319cb961fc6b71e9e408685cbfbdb342.jpg');
-    }
+      
   }
 
 .main-background{
@@ -52,3 +53,27 @@
      margin-bottom: 30px;
   } 
  }
+
+ .filter-label{
+  @include small{
+   margin-bottom: 20px;
+   font-family: $font-stack;
+   font-style: normal;
+   font-size: 18px; 
+   font-weight: 700;
+   line-height: 25px;
+   text-align: center;
+   color: #FFFFFF;
+  } 
+
+  @include desktop{
+   margin-bottom: 30px;
+   font-family: $font-stack;
+   font-style: normal; 
+   font-size: 36px;
+   font-weight: 700;
+   line-height: 25px;
+   text-align: center;
+   color: #FFFFFF;
+} 
+}
