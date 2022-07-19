@@ -3,7 +3,7 @@ import getProducts from"../APIrequest/AllDataAPI";
 import axios from "axios";
 import harry from '../img/harry.png';
 import NavBar from "../NavBar/NavBar";
-//import CardCharacters from "../Characters/CardCharacters";
+import getBackgroundColor from "../Characters/backgroundCard";
 import '../stylesHP/card.scss';
 import BookmarkBorderIcon from '@mui/icons-material/BookmarkBorder';
 
@@ -37,7 +37,7 @@ export default function Home(){
            <div>
                 <div key={character.name}>
                 <div className={character.alive ? "card" : "card-dead"}>
-                <div className="card-photo-div">
+                <div className="card-photo-div" style={{background: getBackgroundColor(character.house.toUpperCase())}}>
                 <img className="card-photo-img" src={character.image} alt="integrante"/>
             </div>
             <div className="card-info-div">
