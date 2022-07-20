@@ -54,10 +54,10 @@ export default function Home(){
                 :character.name}
                 </p>
                 <div className="card-data-div">
-                    <span className="data-label"><strong>{"Cumpleaños "}</strong>{character.dateOfBirth}</span>
-                    <span className="data-label"><strong>{"Género "}</strong>{character.gender}</span>
-                    <span className="data-label"><strong>{"Color de ojos "}</strong>{character.eyeColour}</span>
-                    <span className="data-label"><strong>{"Color de pelo "}</strong>{character.hairColour}</span>
+                    <span className="data-label"><strong>{"Cumpleaños: "}</strong>{character.dateOfBirth}</span>
+                    <span className="data-label"><strong>{"Género: "}</strong>{character.gender}</span>
+                    <span className="data-label"><strong>{"Color de ojos: "}</strong>{character.eyeColour}</span>
+                    <span className="data-label"><strong>{"Color de pelo: "}</strong>{character.hairColour}</span>
                 </div>
             </div>
         </div>
