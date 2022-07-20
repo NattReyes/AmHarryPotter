@@ -179,6 +179,7 @@ text-align: left;
  
   
   .card-info-header{
+   color: $header-color;
       @include small{
          top: 64px;
          text-align: center;
@@ -194,6 +195,10 @@ text-align: left;
          font-style: normal;
          font-size: 30px;
          font-weight: 600;
+width: 226px;
+height: 46px;
+line-height: 25px;
+align-items: leftgit ;
          
       } 
   }
