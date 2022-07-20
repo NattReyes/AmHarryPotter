@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import getProducts from"../../API/APIrequest";
+import getCharacters from"../../API/APIrequest";
 import axios from "axios";
 import harry from '../img/harry.png';
 import NavBar from "../Bar/Bar";
@@ -8,17 +8,17 @@ import '../stylesHP/card.scss';
 import BookmarkBorderIcon from '@mui/icons-material/BookmarkBorder';
 
 export default function Home(){
-    const[characters,setProducts] = useState([]);
+    const[characters,setCharacters] = useState([]);
 
     useEffect(() => {
-        getProducts().then(setProducts);
+        getCharacters().then(setCharacters);
     }, []);
 
     const api= "http://localhost:5000/characters"
     async function filterStudents (value){
         return await axios.get(`${api}?hogwartsStudent=${value}`)
         .then((response)=>{
-        setProducts(response.data);
+        setCharacters(response.data);
     })
     .catch((err)=> console.log(err));
 };
