@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import BookmarkIcon from '@mui/icons-material/Bookmark';
 import PersonAddIcon from '@mui/icons-material/PersonAdd';
-import Modal from '../NavBar/modalAddCharacter';
+import Modal from './modalAddCharacter';
 
 export default function NavBar() {
     const [isOpenModal, setIsOpenModal]= useState(false);
@@ -33,14 +33,3 @@ export default function NavBar() {
         </div>
     )
 }
-
-/*
-<buton onClick={openModal}> aqui
-
-</buton> 
-<PersonAddIcon className="options-icon"/>
-                    <button onClick={openModal}>
-                        <span>AGREGAR</span>
-                    </button>
-                    <Modal isOpen={isOpenModal}/>
-*/

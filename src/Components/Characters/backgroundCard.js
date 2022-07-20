@@ -1,4 +1,3 @@
-//import '../stylesHP/card.scss';
 const griffindorBackground= "linear-gradient(135deg, #FF0000 0%, #FED482 100%)";
 const slytherinBackground=  "linear-gradient(135deg, #1C792B 0%, #82E95E 100%)";
 const ravenclawBackground=  "linear-gradient(135deg, #0597B7 0%, #66D1FF 100%)";

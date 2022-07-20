@@ -89,11 +89,3 @@ import HighlightOffIcon from '@mui/icons-material/HighlightOff';;
 }
 
 export default Modal
-
-/*
-<h1>Hola</h1>
-                <button onClick={closeModal}>
-                 close
-                </button>
-                <p></p>
-                */

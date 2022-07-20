@@ -162,21 +162,7 @@ text-align: left;
          margin-left: 70px;
          transform: scale(1.5);
      }
-  }
- 
-  .bookmark-icon-selected{
-     @include small{
-         margin-left: 6px;
-         transform: scale(1);
-         color: #000000;
-     }
-     @include desktop{
-         margin-left: 70px;
-         transform: scale(1.5);
-         color: #000000;
-     }
-  }
- 
+  } 
   
   .card-info-header{
    color: $header-color;

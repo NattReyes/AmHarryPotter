@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import getProducts from"../APIrequest/AllDataAPI";
+import getProducts from"../../API/APIrequest";
 import axios from "axios";
 import harry from '../img/harry.png';
-import NavBar from "../NavBar/NavBar";
+import NavBar from "../Bar/Bar";
 import getBackgroundColor from "../Characters/backgroundCard";
 import '../stylesHP/card.scss';
 import BookmarkBorderIcon from '@mui/icons-material/BookmarkBorder';
@@ -48,11 +48,7 @@ export default function Home(){
                         :" STAFF"}
                     <BookmarkBorderIcon className="bookmark-icon"/>
                 </div>
-                <p className="card-info-header">{
-                character.name.length>24 ? 
-                character.name.substring(0,22)
-                :character.name}
-                </p>
+                <p className="card-info-header">{character.name}</p>
                 <div className="card-data-div">
                     <span className="data-label"><strong>{"Cumpleaños: "}</strong>{character.dateOfBirth}</span>
                     <span className="data-label"><strong>{"Género: "}</strong>{character.gender}</span>
