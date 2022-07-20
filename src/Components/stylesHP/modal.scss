@@ -1,0 +1,14 @@
+$primary-color: #FFFFFF;
+
+ 
+ .modal {
+    background: $primary-color;
+    display: none;
+ 
+  
+  }
+
+  .modal-open {
+    display: flex;
+    margin-top: 100px;
+  }
