@@ -150,6 +150,7 @@ $hover-color: #6B63B599;
  }
 
 .options-icon{
+  cursor: pointer;
     @include small{
         margin-left: 2px;
         transform: scale(.9);

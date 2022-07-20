@@ -1,14 +1,158 @@
 $primary-color: #FFFFFF;
-
+$font-stack: 'Open Sans', sans-serif;
  
  .modal {
-    background: $primary-color;
+    background-color: rgba(0,0,0, .85);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
     display: none;
- 
-  
+    justify-content: center;
+    align-items: center;
   }
 
   .modal-open {
-    display: flex;
-    margin-top: 100px;
+    display: flex;    
   }
+
+  .formAdd {
+    background-color: $primary-color;
+    color: #263238;
+    width: 650px;
+    height: 516px;
+    padding: 8px 24px;
+    border-radius: 10px;
+    position: relative;
+    
+  }
+ 
+  .formAdd-close {
+    width: 25.5px;
+    height: 25.5px;
+    top: 4.25px;
+    right: 4.25px;   
+    right: 25px;
+    top: 25px;   
+    position: absolute;
+    cursor: pointer;
+  }
+ 
+  .formAdd-display {
+    border: 1px solid transparent;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 8px;
+  }
+
+  .formAdd-title {
+    width: 448px;
+    height: 65px;
+    font-family: $font-stack;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 40px;
+    color: #000000;
+  }
+  
+  .formAdd-label {
+    display: flex;
+    flex-direction: column;
+    margin: 0.2rem 0;
+    width: 47%; 
+    font-family: $font-stack;
+    font-style: normal;
+    font-size: 14px;      
+  }
+  
+  .formAdd-input {
+    height: 56px;
+    border-radius: 5.33333px 5.33333px 0px 0px;
+    background-color: #263238;
+    opacity: 0.06;
+    margin: 4.8px 0;
+    box-shadow: 0px 5px 5px black;
+    &:focus {
+      background-color: rgb(224, 224, 224);
+    } 
+  }
+  
+   .formAdd-radio {
+    display: flex;
+    cursor: pointer;
+    input[type='radio'] {
+      cursor: pointer;
+    }
+  }
+
+  .formAdd-radios {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 8px;
+  }
+
+
+  .formAdd-addFile {
+    margin-left: 10px;
+    align-items: center;
+    width: 100%;
+    gap: 8px;
+    padding-bottom: 8px;
+    flex-direction: column;
+  }
+  
+  .formAdd-file {
+    border-radius: 8px;
+    border: 1px solid rgb(75, 75, 75);
+    width: 200px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 8px;
+    overflow: hidden;
+  }
+
+  .formAdd-inputFile {
+    position: absolute;
+    right: 63px;
+    cursor: pointer;
+  }
+ 
+  .formAdd-houses {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+  }
+
+  
+  .formAdd-legend {
+    text-align: initial;
+    width: 40%;
+    padding: 16px 0 0 0;
+    display: flex;
+    gap: 16px;
+  }
+
+  .formAdd-selectHouse {
+    display: flex;
+    gap: 16px;
+    padding: 1rem 0;
+  }
+
+.buttonSubmit{
+    width: 288px;
+    height: 67px;
+    background: rgba(0, 0, 0, 0.6);
+    border: 4px solid #6B63B5;
+    border-radius: 4px;
+    margin-left: 300px;
+    margin-top: -80px;
+    cursor: pointer;
+}
